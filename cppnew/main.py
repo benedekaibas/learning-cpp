@@ -1,32 +1,21 @@
 """
-Írjon programot, ami beolvas egy szöveget, majd egy betűt, és megmondja, a betű hányszor szerepel a szövegben.
-
+You are given two non-empty linked lists representing two non-negative integers. 
+The digits are stored in reverse order, and each of their nodes contains a single digit. 
+Add the two numbers and return the sum as a linked list.
 """
 
 
-def letter_finder():
-    text = str(input('Enter a text: '))
-    letter = str(input('Enter a letter: '))
+def main():
+    list_one = list(input('Enter three numbers: '))
+    list_two = list(input('Etner three numbers: '))
+    print(f"{list_one}\n{list_two}")
 
-    if letter in text:
-        to_lower = letter.lower()
-        count = to_lower.count(letter)
-        print(f"We have found {count} {letter} letters in your text!")
+    number = 0 
 
+    for  number in list_one:
+        number = int(''.join(map(str, list_one)))
+        print(number)
+        break
 
 if __name__ == "__main__":
-    letter_finder()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main()
