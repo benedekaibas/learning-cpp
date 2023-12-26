@@ -15,7 +15,7 @@ int main(){
     string operand;
     cout << "Enter an operand that you would like to do: ";
     cin >> operand;
-    cout << operand;
+    cout << operand; 
     if (operand == "+"){
         cout << "result:" << a + b;
     } else if (operand == "-"){
