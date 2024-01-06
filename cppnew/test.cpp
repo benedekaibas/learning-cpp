@@ -1,14 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int square_s2(int s2){
-    return s2 * s2;
-}
-
-void print_s2(int s2){
-    cout << "s2 squared gives the result " << s2 << endl;
-}
 
 int main(){
-    print_s2(2);
+    string guess;
+    string color = "blue";
+    cout << "Enter the car's color: ";
+    cin >> guess;
+
+
+    if(guess == color){
+        cout << "Congrats you guessed correctly that the car's color is " << color;
+    }else if(guess != color){
+        cout << "You could not guess the correct color of the car";
+    }
+    cin.get();
 }
