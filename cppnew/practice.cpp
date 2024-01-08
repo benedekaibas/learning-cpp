@@ -11,7 +11,7 @@ int main(){
 
     if(question == "red"){
         decider = true;
-        return decider;
+        cout << decider;
     } else{
         cout << "program is not working efficiently";
     }
