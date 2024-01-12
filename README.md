@@ -10,3 +10,4 @@ The name of the file is: practice.cpp
 # Bjarne Stroustrup book of c++
 
 link: https://chenweixiang.github.io/docs/The_C++_Programming_Language_4th_Edition_Bjarne_Stroustrup.pdf
+I am also using the 3rd edition of Bjarne Stroustrup's book which covers c++ 20
