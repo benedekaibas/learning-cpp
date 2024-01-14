@@ -2,7 +2,7 @@
 Write a simple calculator in c++
 */
 
-
+//check if i can commit from phone 
 #include <iostream>
 using namespace std;
 
