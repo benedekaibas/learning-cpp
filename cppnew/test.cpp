@@ -4,8 +4,9 @@ using namespace std;
 int main(){
     string name;
     name = "Benedek Kaibas";
-    int newNname;
-    newNname = stoi(name);
+    cout << name;
+    int newName;
+    newName = 321;
     long a;
     a = 123;
     long long b;
@@ -18,7 +19,7 @@ int main(){
     cout << "Size of int c " << sizeof(c) << endl;
 
     //TODO: make this more readable
-    if (a >= newNname ){
+    if (a >= newName ){
         cout << "Size of long a " << sizeof(a) << endl;
     } else{
         cout << "not working";
