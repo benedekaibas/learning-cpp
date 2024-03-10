@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "C:\\mingw-w64-v11.0.0\\mingw-w64-crt\\include"
             ],
             "defines": [
                 "_DEBUG",
@@ -12,7 +12,8 @@
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false
-            }
+            },
+            "compilerPath": ""
         }
     ],
     "version": 4
