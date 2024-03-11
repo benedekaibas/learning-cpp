@@ -7,9 +7,12 @@ int main(){
 
     int a = 5;
     int b = 4; 
+    int calculation = a % b;
 
-    cout << a % b;
+    cout << sizeof(calculation);
+
+
+
 
      cin.get();
-
 }
