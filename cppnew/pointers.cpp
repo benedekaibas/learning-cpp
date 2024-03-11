@@ -7,7 +7,7 @@ int main(){
 
     int a = 5;
     int b = 4; 
-    int calculation = a % b;
+    double calculation = a % b;
 
     cout << sizeof(calculation);
 
