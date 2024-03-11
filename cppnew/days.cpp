@@ -1,7 +1,6 @@
 #include <iostream>
-using namespace std;
 #include <string>  // Include the <string> header for using the string type
-
+using namespace std;
 
 int main(){
     string userDay;
