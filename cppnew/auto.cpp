@@ -27,4 +27,13 @@ int main()
  
     cin.get();
 }
+// the output
 
+/*
+i
+d
+f
+c
+Pi
+PPi
+*/
