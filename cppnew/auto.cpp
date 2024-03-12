@@ -26,6 +26,7 @@ int main()
            << typeid(pptr).name() << endl;
  
     cin.get();
+
 }
 // the output
 
