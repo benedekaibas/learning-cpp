@@ -14,8 +14,8 @@ int main()
     // no error in them
     auto x = 4;
     auto y = 3.37;
-      auto z = 3.37f;
-      auto c = 'a';
+    auto z = 3.37f;
+    auto c = 'a';
     auto ptr = &x;
       auto pptr = &ptr; //pointer to a pointer
     cout << typeid(x).name() << endl
