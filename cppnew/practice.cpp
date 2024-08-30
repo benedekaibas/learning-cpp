@@ -8,7 +8,6 @@ int main(){
 
     int number_one;
     int number_two;
-    int answer = number_one + number_two;
 
     cout << "Enter a number: ";
     cin >> number_one;
@@ -16,7 +15,9 @@ int main(){
     cout << "Enter another number: ";
     cin >> number_two;
 
-    cout << answer;
+    int answer = number_one + number_two;
 
-    cin.get();
+    cout << "The answer is: " << answer;
+
+    return 0;
 }
