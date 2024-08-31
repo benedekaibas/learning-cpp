@@ -31,7 +31,33 @@ int divide(int number_one, int number_two){
     return number_one / number_two;
 };
 
+int main(){
+    int number_one, number_two;
+    string operand;
 
+    cout << "Enter the first number: ";
+    cin >> number_one;
+
+    cout << "Enter the second number: ";
+    cin >> number_two;
+
+    cout << "Enter an operand (+, -, *, /): ";
+    cin >> operand;
+
+    try{
+        if (operand == "+"){
+            cout << "Result: " << add(number_one, number_two);
+        } else if (operand == "-"){
+            cout << "Result: " << substract(number_one, number_two);
+        } else if (operand == "*"){
+            cout << "Result: " << multiply(number_one, number_two);
+        } else if (operand == "/"){
+            cout << "Result: " << divide(number_one, number_two);
+        }
+    } catch (const invalid_argument &e){
+        cout << e.what() << endl;    
+        }
+    }
 
 
 
