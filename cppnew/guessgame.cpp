@@ -9,10 +9,12 @@ int main(){
     cin >> guess;
 
 
-    if(guess == color){
-        cout << "Congrats you guessed correctly that the car's color is " << color;
-    }else if(guess != color){
-        cout << "You could not guess the correct color of the car";
+    while(guess != color){
+        cout << "Incorrect answer!";
+        cin >> guess;
     }
+    cout << "Congratulations! You guessed correctly. The car's color is " << color << "." << endl;
+
+
     cin.get();
 }
