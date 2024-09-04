@@ -15,6 +15,5 @@ int main(){
     }
     cout << "Congratulations! You guessed correctly. The car's color is " << color << "." << endl;
 
-
     cin.get();
 }
