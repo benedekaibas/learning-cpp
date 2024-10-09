@@ -18,4 +18,10 @@ int main(){
     }
     cout << endl;
 
+    for(int num : numbers){
+        if(num > 3){
+            cout << num;
+        }
+    }
+    cout << endl;
 }
