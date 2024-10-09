@@ -11,12 +11,12 @@ int main(){
 
         if(i > 0 && i % 2 != 0){
             numbers.push_front(i);
-            cout << "List contains";
-
-            for(int num : numbers){
-                cout << num;
-            }
-            cout << endl;
-        
+    
+    cout << "List contains: ";
+    for(int num : numbers){
+        cout << num;
+    }
+    cout << endl;
+    
     }
 }}
