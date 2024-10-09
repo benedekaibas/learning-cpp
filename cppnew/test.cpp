@@ -10,7 +10,7 @@ int main(){
         i++;
 
         if(i > 0 && i % 2 != 0){
-            numbers.push_front(i);
+            numbers.push_back(i);
     
     cout << "List contains: ";
     for(int num : numbers){
