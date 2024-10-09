@@ -11,15 +11,12 @@ int main(){
 
         if(i > 0 && i % 2 != 0){
             numbers.push_front(i);
+            cout << "List contains" << endl;
 
-            cout << "These are the odd numbers: ";
             for(int num : numbers){
-                cout << num << " " << endl;
+                cout << num;
             }
-        } else {
-            cout << "These are the even numbers: " << i;
-        }
+            cout << endl;
         
     }
-    return 0;
-}
+}}
