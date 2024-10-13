@@ -31,8 +31,6 @@ int main(){
                 cout << "You guessed the correct number: " << random_number;
         }
         }
-
-
          
     }
 }
