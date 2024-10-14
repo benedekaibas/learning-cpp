@@ -16,10 +16,16 @@ void user(){
         cout << "Enter a number:";
         cin >> input;
         user_input.push_back(input);
+        
+        for(int num : user_input){
+            cout << num;
+        }
+        cout << endl;
     }
 
 }
 
 int main(){
+    user();
     return 0;
 }
