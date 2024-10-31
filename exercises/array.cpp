@@ -8,24 +8,17 @@ integers and finds the second smallest element in the array using a function.
 #include <vector>
 using namespace std;
 
-void user(){
-    vector<int> user_input;
-    int input;
+void user_input(){
+    int user_array = {};
+    cout << "Enter an array of integers: ";
+    cin >> user_array;
 
-    while(true){
-        cout << "Enter a number:";
-        cin >> input;
-        user_input.push_back(input);
-        
-        for(int num : user_input){
-            cout << num;
-        }
-        cout << endl;
-    }
+    cout << "The array you have entered is the following: " << user_array;
 
 }
 
+
 int main(){
-    user();
+    user_input();
     return 0;
 }
