@@ -9,12 +9,18 @@ integers and finds the second smallest element in the array using a function.
 using namespace std;
 
 void user_input(){
-    int user_array = {};
-    cout << "Enter an array of integers: ";
-    cin >> user_array;
+    vector<int> user_array;
+    int number;
+    cout << "Enter integers numbers: ";
 
-    cout << "The array you have entered is the following: " << user_array;
-
+    while(cin >> number){
+        user_array.push_back(number);
+    }
+    cout << "The array you have entered is the following: ";
+    for (int num : user_array){
+        cout << num;
+    }
+    cout << endl;
 }
 
 
