@@ -6,25 +6,27 @@ integers and finds the second smallest element in the array using a function.
 
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
-void user_input(){
-    vector<int> user_array;
+void user_input(vector<int> &user_array){
+    // vector<int> user_array;
     int number;
-    cout << "Enter integers numbers: ";
+    cout << "Enter integer numbers: ";
 
     while(cin >> number){
         user_array.push_back(number);
     }
     cout << "The array you have entered is the following: ";
     for (int num : user_array){
-        cout << num;
+        cout << num << " ";
     }
     cout << endl;
 }
 
 
 int main(){
-    user_input();
+    vector<int> user_array;
+    user_input(user_array);
     return 0;
 }
