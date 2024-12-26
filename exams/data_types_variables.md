@@ -8,17 +8,24 @@
    C) `integer_value int = 4;`  
    D) `int_value integer = 4;`
 
+   Answer A is the correct answer since in c++ you have to declare the type of the variable before
+   its name. In this case, it is an integer value since 4 is an integer. Integers` size is either 2 or 4 bytes.
+
 2. **What is the correct data type for a variable that stores a single character?**  
    A) `char`  
    B) `string`  
    C) `bool`  
    D) `int`
 
+   A is the correct answer since char is used for storing single character and its size is 1 byte.
+
 3. **Which of the following is a valid boolean value in C++?**  
    A) `yes`  
    B) `no`  
    C) `true`  
    D) `1`
+
+   Answer C is the correct. Boolean value has a size of 1 byte and its value is either true or false.
 
 ---
 
