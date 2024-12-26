@@ -81,3 +81,22 @@ int main(){
 - A string variable named string_value with a value of "Hello"
 - A character variable named char_value with a value of 'H'
 - A double variable named double_value with a value of 99.99
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+
+   int integer_value = 10;
+   bool boolean_value = false;
+   string string_value = "Hello";
+   char char_value = 'H';
+   double double_value = 99.99;
+
+   cout << "Integer: " << integer_value;
+   // we do this with all the variables
+
+   return 0;
+}
+```
