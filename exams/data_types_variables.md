@@ -31,16 +31,53 @@
 
 ## True or False
 
-1. The `double` data type is used to store floating-point numbers. (**True/False**)  
-2. The `string` data type can store multiple characters. (**True/False**)  
-3. The `char` data type can store more than one character. (**True/False**)  
+1. The `double` data type is used to store floating-point numbers. (**True/False**)
+
+It is true.
+
+2. The `string` data type can store multiple characters. (**True/False**)
+
+It is true since we use string to store one or more characters unlike char that is only used for
+storing a single character.
+
+3. The `char` data type can store more than one character. (**True/False**)
+
+It is false since a char data type can only store a single character like 'A'.
+We have to use single '' if we store char.
 
 ---
 
 ## Short Answer
 
-1. **Write a line of code to declare a variable named `double_value` of type `double` and initialize it with the value `87.43`.**  
+1. **Write a line of code to declare a variable named `double_value` of type `double` and initialize it with the value `87.43`.**
 
+```cpp
+int main(){
+   double double_value = 87.43;
+   cout << double_value;
 
-2. **How do you print the value of a variable named `integer_value` to the console in C++?**  
+   return 0;
+};
+```
 
+2. **How do you print the value of a variable named `integer_value` to the console in C++?**
+
+```cpp
+int main(){
+   int integer_value = 99;
+   cout << integer_value
+   return 0;
+};
+```
+
+## Code Writing
+
+### Task:
+
+- Write a C++ program that declares the following variables and prints their values:
+
+- An integer variable named integer_value with a value of 10
+- A boolean variable named boolean_value with a value of false
+- A string variable named string_value with a value of "Hello"
+- A character variable named char_value with a value of 'H'
+- A double variable named double_value with a value of 99.99
