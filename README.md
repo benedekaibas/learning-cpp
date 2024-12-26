@@ -1,7 +1,7 @@
 ## Core C++ Concepts
 
 ### Basic Syntax and Semantics:
-- Variables, data types, and operators
+- Variables, data types, and operators ✅
 - Control structures (if, switch, loops)
 - Functions (declaration, definition, parameters, return values)
 - Pointers and references
