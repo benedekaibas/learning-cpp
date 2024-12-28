@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 /*
@@ -9,7 +10,7 @@ Write a program that converts numerical grades to letter grades:
 70-79: C
 60-69: D
 Below 60: F
-*/
+
 
 int main(){
     double grade;
@@ -31,4 +32,34 @@ int main(){
     }
 
     return 0;
+}
+
+*/
+
+// Write a program that calculates BMI and displays the corresponding category.
+
+int mian(){
+    double pound;
+    double kg;
+
+    double feet;
+    double meters;
+
+    string pounds_kg; // we only need to use pounds and kg string since if it is pounds then the other option is automatically feet and not meters
+
+    double bmi_pound_feet = pound / pow(feet, 2);
+    double bmi_kg_meters = kg / pow(meters, 2);
+
+    cout << "Do you want to use pounds or kilograms?: ";
+    cin >> pounds_kg;
+    cout << "Do you want to use feet or centimeters?: ";
+
+    if (pounds_kg == "pounds"){
+        cout << "Your BMI is the following: " << " " << bmi_pound_feet << endl;
+    } else if (pounds_kg == "kg"){
+        cout << "Your BMI is the following: " << " " << bmi_kg_meters << endl;
+    };
+
+    return 0;
+
 }
