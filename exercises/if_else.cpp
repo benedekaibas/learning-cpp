@@ -38,7 +38,7 @@ int main(){
 
 // Write a program that calculates BMI and displays the corresponding category.
 
-int mian(){
+int main(){
     double pound;
     double kg;
 
@@ -47,16 +47,26 @@ int mian(){
 
     string pounds_kg; // we only need to use pounds and kg string since if it is pounds then the other option is automatically feet and not meters
 
-    double bmi_pound_feet = pound / pow(feet, 2);
-    double bmi_kg_meters = kg / pow(meters, 2);
-
     cout << "Do you want to use pounds or kilograms?: ";
     cin >> pounds_kg;
-    cout << "Do you want to use feet or centimeters?: ";
 
     if (pounds_kg == "pounds"){
+        cout << "Enter your height in feet: ";
+        cin >> feet;
+
+        cout << "Enter your weight in pounds: ";
+        cin >> pound;
+
+        double bmi_pound_feet = pound / pow(feet, 2);
         cout << "Your BMI is the following: " << " " << bmi_pound_feet << endl;
-    } else if (pounds_kg == "kg"){
+    } else if (pounds_kg == "kilograms"){
+        cout << "Enter your height in meters: ";
+        cin >> meters;
+
+        cout << "Enter your weight in kilograms: ";
+        cin >> kg;
+
+        double bmi_kg_meters = kg / pow(meters, 2);
         cout << "Your BMI is the following: " << " " << bmi_kg_meters << endl;
     };
 
