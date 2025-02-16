@@ -7,11 +7,12 @@ int main(){
     cout << "Enter a whole number: ";
     cin >> user_input;
 
-    while (user_input > 0){
-        int sum;
-        sum = user_input * (user_input + 1) / 2;
+    float sum;
 
-    }
-    cout << user_input;
-    return 0;
+
+    sum = user_input * (user_input + 1) / 2;
+
+    cout << "the sum is" << sum << endl;
+
+    cin.get();
 }
