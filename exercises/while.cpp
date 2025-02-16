@@ -3,11 +3,15 @@ using namespace std;
 
 int main(){
 
-    int i = 3;
+    int user_input;
+    cout << "Enter a whole number: ";
+    cin >> user_input;
 
-    while (i < 10){
-        i += 1;
-        cout << i << endl;
+    while (user_input > 0){
+        int sum;
+        sum = user_input * (user_input + 1) / 2;
 
     }
+    cout << user_input;
+    return 0;
 }
