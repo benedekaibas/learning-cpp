@@ -1,17 +1,18 @@
 #include <iostream>
+#include <array>
+#include <span>
+#include <string>
 using namespace std;
 
 int main(){
 
-  int a = 5;
-  int b = 9;
+  int arr[5] = {1,2,3,4,5};
 
-  cout << "A is: " << a << "B is: " << b << endl;
+  cout << (arr[0]) << endl;
 
-  a = b;
-  b = a;
-
-  cout << "A is: " << a << "B is: " << b << endl;  
+  for (int i : arr){
+    cout << -i << endl;
+  }
 
   return 0;
 }
