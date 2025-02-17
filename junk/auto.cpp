@@ -14,9 +14,13 @@ int main(){
 
   //cout << (arr[0]) << endl;
 
-  for (int i : new_array){
-    cout << i << endl;
-  }
+  cout << new_array.back() << endl;
+
+  /*
+   for (int i : new_array){
+    cout << new_array.back(i) << endl;
+  } 
+  */
 
   return 0;
 }
