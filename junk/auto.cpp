@@ -4,14 +4,18 @@
 #include <string>
 using namespace std;
 
+array <int, 5> MyArray(){
+  return {1,2,3,4,5};
+};
+
 int main(){
 
-  int arr[5] = {1,2,3,4,5};
+  array<int, 5> new_array = MyArray();
 
-  cout << (arr[0]) << endl;
+  //cout << (arr[0]) << endl;
 
-  for (int i : arr){
-    cout << -i << endl;
+  for (int i : new_array){
+    cout << i << endl;
   }
 
   return 0;

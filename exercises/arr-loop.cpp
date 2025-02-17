@@ -8,7 +8,6 @@ int main(){
     vector<int> arr;
     char choice;
 
-
     while(true){
         cout << "Enter numbers: ";
         cin >> uinp;
