@@ -1,18 +1,37 @@
 #include <iostream>
+#include <algorithm>
+#include <string>
+#include <vector>
 using namespace std;
 
 int main(){
 
-    int user_input;
-    cout << "Enter a whole number: ";
-    cin >> user_input;
+    int user_inp;
+    char choice;
+    vector<int> arr;
 
-    float sum;
+    cout << "Enter a numbers, type n for stop" << endl;
 
+    while(true){
+        cout << "Enter a number: " << endl;
+        cin >> user_inp;
+        arr.push_back(user_inp);
 
-    sum = user_input * (user_input + 1) / 2;
+        cout << "Do you want to enter more numbers? y/n: " << endl;
+        cin >> choice;
 
-    cout << "the sum is" << sum << endl;
+        if (choice == 'n' || choice == 'N'){
+            break;
+        }
+    }
 
-    cin.get();
+    cout << "You entered: ";
+    for (int i = 0; i < arr.size(); i++){
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+
+    return 0;
+    //cin.get();
 }
