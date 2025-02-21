@@ -29,7 +29,7 @@ int main(){
     vector<int> new_array = arr;
 
     for (int i = 0; i < new_array.size(); i++){
-        cout << new_array[i];
+        cout << new_array[i] << endl;
     }
 
     cout << endl;
