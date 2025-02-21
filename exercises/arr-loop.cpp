@@ -23,13 +23,13 @@ int main(){
 
     cout << "Numbers: " << endl;
     for ( int i = 0; i < arr.size(); i++){
-        cout << arr[i] << endl;
+        cout << "Original array: " << arr[i] << endl;
     }
 
     vector<int> new_array = arr;
 
     for (int i = 0; i < new_array.size(); i++){
-        cout << new_array[i] << endl;
+        cout << "New array: " << new_array[i] << endl;
     }
 
     cout << endl;
