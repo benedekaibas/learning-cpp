@@ -16,8 +16,6 @@ int main(){
 
   // cout << new_array.back() << endl;
 
-  // TODO: Start thinking of doing back and front for first and last element and get the difference between
-  // the first and last element to get the elements in between. Is it possible?
    for (int i : new_array){
     cout << new_array.back() << endl;
   } 
