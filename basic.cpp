@@ -2,17 +2,17 @@
 using namespace std;
 
 /*
-Exercise 1: Number Comparison
-Write a program that takes two
-numbers and prints which one is larger.
+void get_pointer(int* a, int* b){
+    cout << a;
+    cout << b;
+}
 */
-
 int main(){
-    int number_one;
-    int number_two;
+    int a = 10;
+    int* z = &a;
+    cout << a << endl;
+    cout << z;
 
-    cout << "Enter a number: " << endl;
-    cin >> number_one;
-    cout << "Enter the second number: " << endl;
-    cin >> number_two;
+    return 0;
+
 }
