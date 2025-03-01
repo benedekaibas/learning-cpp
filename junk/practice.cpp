@@ -6,18 +6,11 @@ using namespace std;
 
 int main(){
 
-    int number_one;
-    int number_two;
-
-    cout << "Enter a number: ";
-    cin >> number_one;
-
-    cout << "Enter another number: ";
-    cin >> number_two;
-
-    int answer = number_one + number_two;
-
-    cout << "The answer is: " << answer;
+    int array[10] = {1,2,3,4,5,6,7,8,9,10};
+    cout << array << endl;
+    int* ptr = array;
+    cout << ptr << endl;
 
     return 0;
+
 }
