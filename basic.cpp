@@ -1,18 +1,24 @@
 #include <iostream>
 using namespace std;
 
-/*
-void get_pointer(int* a, int* b){
-    cout << a;
-    cout << b;
-}
-*/
+/**
+   Write a for loop that prints the numbers from 1 to 10.
+ */
+
 int main(){
-    int a = 10;
-    int* z = &a;
-    cout << a << endl;
-    cout << z;
+    int i = 0;
+
+    while (i < 10){
+        cout << i++ << endl;
+    }
+
+    for (int x = 0; x < 10; x++){
+        cout << "This is the iteration: "<< x << endl;
+        int* z = &x;
+        cout << "This is the pointer's pointing to the variable: " << &z;
+    }
 
     return 0;
+
 
 }

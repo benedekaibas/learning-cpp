@@ -70,6 +70,8 @@ Correct answers:
 1. **For Loop Printing Numbers 1 to 10:**  
    Write a for loop that prints the numbers from 1 to 10.
 
+
+
 2. **Difference Between While and Do-While Loops:**  
    Explain the difference between while and do-while loops.
 
