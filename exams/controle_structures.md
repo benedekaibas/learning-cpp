@@ -12,6 +12,8 @@ Which of the following is the correct syntax for an if statement in C++?
 - **C)** `if (x > 10) { cout << "x is greater than 10"; }`  
 - **D)** `if x > 10: cout << "x is greater than 10"`
 
+Correct is C
+
 ---
 
 **Question 2:**  
@@ -31,6 +33,8 @@ switch (x) {
 - **C)** Default  
 - **D)** No output
 
+Correct answer is B
+
 *(Note: The actual code snippet is not provided; answer based on the intended context.)*
 
 ---
@@ -43,6 +47,8 @@ Which loop is guaranteed to execute at least once?
 - **C)** do-while loop  
 - **D)** None of the above
 
+Correct answer is A
+
 ---
 
 ## True or False
@@ -52,6 +58,12 @@ Which loop is guaranteed to execute at least once?
 3. The continue statement skips the rest of the current loop iteration and proceeds to the next iteration. (True/False)
 
 ---
+
+Correct answers: 
+
+1. True
+2. True
+3. False
 
 ## Short Answer
 
