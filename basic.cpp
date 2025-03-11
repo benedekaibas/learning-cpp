@@ -17,6 +17,12 @@ int main(){
     cout << "Enter another number: ";
     cin >> number_two;
 
-    
+    if(number_one > number_two){
+        cout << "Number one is larger: " << number_one << endl;
+    } else if (number_one < number_two){
+        cout << "Number two is larger: " << number_two << endl;
+    } else {
+        cout << number_one << "and" << number_two << "are equal" << endl;
+    }
     return 0;
 }

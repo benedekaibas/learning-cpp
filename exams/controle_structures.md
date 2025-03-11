@@ -87,12 +87,35 @@ int main(){
 
 ---
 
-A do-while loop is guaranteed to execute at least once while the while loop might not execute if the statement is wrong and it produce multiple outputs if the conditions are true.
+A do-while loop is guaranteed to execute at least once while the while loop might not execute if the statement is wrong and it produce multiple outputs if the conditions are true. The do-while executes the code block first and then checks for the conditions while the while loop checks the condition first and then executes the code block.
 
 ## Code Writing
 
 ### Task 1: Number Comparison
 Write a C++ program that takes two numbers as input and prints which one is larger, or if they are equal.
+
+```cpp
+int main(){
+    
+    int number_one;
+    int number_two;
+
+    cout << "Enter a number: ";
+    cin >> number_one;
+
+    cout << "Enter another number: ";
+    cin >> number_two;
+
+    if(number_one > number_two){
+        cout << "Number one is larger: " << number_one << endl;
+    } else if (number_one < number_two){
+        cout << "Number two is larger: " << number_two << endl;
+    } else {
+        cout << number_one << "and" << number_two << "are equal" << endl;
+    }
+    return 0;
+}
+```
 
 ### Task 2: Grade Calculator
 Write a C++ program that converts numerical grades to letter grades using a switch statement:
