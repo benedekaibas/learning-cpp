@@ -2,23 +2,21 @@
 using namespace std;
 
 /**
-   Write a for loop that prints the numbers from 1 to 10.
+   Write a C++ program that takes two numbers as input and prints which one is larger, 
+   or if they are equal.
  */
 
 int main(){
-    int i = 0;
+    
+    int number_one;
+    int number_two;
 
-    while (i < 10){
-        cout << i++ << endl;
-    }
+    cout << "Enter a number: ";
+    cin >> number_one;
 
-    for (int x = 0; x < 10; x++){
-        cout << "This is the iteration: "<< x << endl;
-        int* z = &x;
-        cout << "This is the pointer's pointing to the variable: " << &z;
-    }
+    cout << "Enter another number: ";
+    cin >> number_two;
 
+    
     return 0;
-
-
 }

@@ -70,12 +70,24 @@ Correct answers:
 1. **For Loop Printing Numbers 1 to 10:**  
    Write a for loop that prints the numbers from 1 to 10.
 
+```cpp
+int main(){
+    for(int i = 1; i < 10; i++){
+        cout << i << endl;
+    };
+
+    return 0;
+}
+```
+
 
 
 2. **Difference Between While and Do-While Loops:**  
    Explain the difference between while and do-while loops.
 
 ---
+
+A do-while loop is guaranteed to execute at least once while the while loop might not execute if the statement is wrong and it produce multiple outputs if the conditions are true.
 
 ## Code Writing
 
