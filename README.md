@@ -65,5 +65,3 @@
 - Write pseudocode before actual implementation
 - Optimize the solution iteratively
 
-
-
