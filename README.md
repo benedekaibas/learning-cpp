@@ -64,3 +64,4 @@
 - Break down the problem into smaller parts
 - Write pseudocode before actual implementation
 - Optimize the solution iteratively
+
