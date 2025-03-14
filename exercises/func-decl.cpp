@@ -19,5 +19,8 @@ string add_strings(string word_one, string word_two){
 
 int main(){
     addition(3,5);
-    
+    cout << addition_int(4,5) << endl;
+    cout << addition_float(4.3, 6.6) << endl;
+    cout << add_strings("Hello", "World") << endl;
+
 }
