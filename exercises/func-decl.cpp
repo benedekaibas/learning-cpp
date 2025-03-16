@@ -1,11 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int n) {
-    return n * factorial(n - 1);
+void swap_nums(int &a, int &b){
+    //int z = a;
+    a = b;
+    b = a;
 }
 
 int main() {
-    cout << "Factorial of 5: " << factorial(5) << endl; // Should print 120
-    return 0;
+   int first_num = 5;
+   int second_num = 6;
+
+   swap_nums(first_num, second_num);
+
+   cout << first_num << second_num;
 }
