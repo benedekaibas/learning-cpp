@@ -15,7 +15,8 @@ void func_loop(){
     for (int number : my_vector){
         sum += number;
     }
-    cout << "sum: " << sum;
+    cout << "sum: " << sum << endl;
+    cout << sizeof(my_vector) << endl;
 }
 
 int main(){
