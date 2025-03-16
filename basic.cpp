@@ -1,15 +1,23 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
-void data_type(){
-    int a;
-    char b = 'c';
-    cout << sizeof(a) << endl;
-    cout << sizeof(b) << endl;
+//Write a C++ program that uses a for loop to calculate the sum of all even numbers between 1 and 100.
+
+void func_loop(){
+    vector<int> my_vector;
+    int sum = 0;
+    for (int i = 1; i < 101; i++){
+        if (i % 2 == 0){
+            my_vector.push_back(i);
+        }
+    }
+    for (int number : my_vector){
+        sum += number;
+    }
+    cout << "sum: " << sum;
 }
 
-
 int main(){
-    cout << "Hello World" << endl;
-    data_type();
+    func_loop();
 }
