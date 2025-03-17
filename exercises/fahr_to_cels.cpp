@@ -1,19 +1,20 @@
 #include <iostream>
 using namespace std;
 
-float dot_product(float a[], float b[], int n) {
-    float result = 0.0;
-    for (int i = 0; i < n; i++) {
-        result += a[i] * b[i]; // Manual element-wise multiplication and summation
-    }
-    return result;
+//17. Write a function `swapValues` that swaps two integer values using pass-by-reference.
+
+void swap(int &a, int &b){
+    int &c = a;
+    a = b;
+    b = c;
 }
 
 int main(){
-    float a[] = {1.0, 2.0, 3.0};
-    float b[] = {4.0, 5.0, 6.0};
-    int n = 3;
+    int first_num = 10;
+    int second_num = 19;
 
-    float result = dot_product(a, b, n);
-    cout << result;
+    cout << "The original first and second numbers are: " << first_num << " " << second_num << endl;
+
+    swap(first_num, second_num);
+    cout << "The swapped numbers are: " << first_num << " " << second_num << endl;
 }

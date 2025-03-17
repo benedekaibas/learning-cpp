@@ -95,6 +95,20 @@ A function declaration is how a function created for example `int add_numbers(in
 
 16. Write a function declaration and definition for a function named `sum` that takes two integers as parameters and returns their sum.
 
+```cpp
+int addition(int a, int b){
+    return a + b;
+}
+
+int main(){
+    int a = 321;
+    int b = 10;
+    int result = addition(a, b);
+
+    cout << "The sum of the two numbers is: " << result << endl;
+}
+```
+
 17. Write a function `swapValues` that swaps two integer values using pass-by-reference.
 
 18. Implement a function `isEven` that takes an integer and returns `true` if it is even and `false` otherwise.
