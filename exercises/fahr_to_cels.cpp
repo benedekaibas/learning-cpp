@@ -1,20 +1,26 @@
 #include <iostream>
 using namespace std;
 
-//17. Write a function `swapValues` that swaps two integer values using pass-by-reference.
+//18. Implement a function `isEven` that takes an integer and returns `true` if it is even and `false` otherwise.
 
-void swap(int &a, int &b){
-    int c = a;
-    a = b;
-    b = c;
+
+bool isEven(int num){
+
+    if (num % 2 == 0){
+        return true;
+    } else if (num % 2 != 0){
+        return false;
+    } else {
+        return "The number you enter is not an integer";
+    }
 }
 
 int main(){
-    int first_num = 10;
-    int second_num = 19;
+    int num;
+    cout << "Enter an integer number: ";
+    cin >> num;
 
-    cout << "The original first and second numbers are: " << first_num << " " << second_num << endl;
+    bool result = isEven(num);
 
-    swap(first_num, second_num);
-    cout << "The swapped numbers are: " << first_num << " " << second_num << endl;
+    cout << "The number you have entered is the following: " << result << endl;
 }
