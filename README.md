@@ -3,7 +3,7 @@
 ### Basic Syntax and Semantics:
 - Variables, data types, and operators ✅
 - Control structures (if, switch, loops) ✅
-- Functions (declaration, definition, parameters, return values)
+- Functions (declaration, definition, parameters, return values)✅
 - Pointers and references
 
 ### Object-Oriented Programming (OOP):
