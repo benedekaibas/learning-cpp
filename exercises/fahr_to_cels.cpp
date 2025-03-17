@@ -1,19 +1,24 @@
 #include <iostream>
 using namespace std;
 
-//19. Write a function `factorial` that calculates the factorial of a number using recursion.
+//20. Implement a function that returns the larger of two floating-point numbers using a return statement.
 
-int factorial(int num){
-    if (num == 0){
-        return 1;
+float getLargerFloat(float a, float b){
+    if (a > b){
+        cout << "Number a is bigger than number b ";
+        return a;
+    } else if (a <  b){
+        cout << "Number b is bigger than number a ";
+        return b;
     } else {
-        return num * factorial(num - 1);
+        cout << "Number a and b are equal." << endl;
     }
 }
 
 int main(){
-    int num = 8;
+    float a = 98.0;
+    float b = 32.0;
 
-    int result = factorial(num);
-    cout << result << endl;
+    float result = getLargerFloat(a, b);
+    cout << result;
 }
