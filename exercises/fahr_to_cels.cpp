@@ -1,26 +1,19 @@
 #include <iostream>
 using namespace std;
 
-//18. Implement a function `isEven` that takes an integer and returns `true` if it is even and `false` otherwise.
+//19. Write a function `factorial` that calculates the factorial of a number using recursion.
 
-
-bool isEven(int num){
-
-    if (num % 2 == 0){
-        return true;
-    } else if (num % 2 != 0){
-        return false;
+int factorial(int num){
+    if (num == 0){
+        return 1;
     } else {
-        return "The number you enter is not an integer";
+        return num * factorial(num - 1);
     }
 }
 
 int main(){
-    int num;
-    cout << "Enter an integer number: ";
-    cin >> num;
+    int num = 8;
 
-    bool result = isEven(num);
-
-    cout << "The number you have entered is the following: " << result << endl;
+    int result = factorial(num);
+    cout << result << endl;
 }

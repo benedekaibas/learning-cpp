@@ -131,6 +131,47 @@ int main(){
 
 18. Implement a function `isEven` that takes an integer and returns `true` if it is even and `false` otherwise.
 
+```cpp
+bool isEven(int num){
+
+    if (num % 2 == 0){
+        return true;
+    } else if (num % 2 != 0){
+        return false;
+    } else {
+        return "The number you enter is not an integer";
+    }
+}
+
+int main(){
+    int num;
+    cout << "Enter an integer number: ";
+    cin >> num;
+
+    bool result = isEven(num);
+
+    cout << "The number you have entered is: " << num << endl;
+    cout << num << " is an even integer (1-yes, 0-false): " << result << endl;
+}
+```
+
 19. Write a function `factorial` that calculates the factorial of a number using recursion.
+
+```cpp
+int factorial(int num){
+    if (num == 0){
+        return 1;
+    } else {
+        return num * factorial(num - 1);
+    }
+}
+
+int main(){
+    int num = 8;
+
+    int result = factorial(num);
+    cout << result << endl;
+}
+```
 
 20. Implement a function that returns the larger of two floating-point numbers using a return statement.
