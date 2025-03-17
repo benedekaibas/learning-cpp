@@ -4,7 +4,7 @@ using namespace std;
 //17. Write a function `swapValues` that swaps two integer values using pass-by-reference.
 
 void swap(int &a, int &b){
-    int &c = a;
+    int c = a;
     a = b;
     b = c;
 }
