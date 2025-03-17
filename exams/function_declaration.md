@@ -83,11 +83,39 @@ A function declaration is how a function created for example `int add_numbers(in
 
 12. What is function overloading? Provide an example.
 
+C++ allows to create multiple function with the same name until their parameters are different.
+
+```cpp
+int add(int a, int b) {
+    return a + b;
+}
+
+double add(double a, double b) {
+    return a + b;
+}
+
+int add(int a, int b, int c) {
+    return a + b + c;
+}
+```
+
 13. What are default parameters in functions? Provide an example.
+
+Parameters are passed into the function call like `int add_numbers(int a, int b)`.  
 
 14. Explain the concept of inline functions. When should they be used?
 
 15. Describe how functions can return multiple values using references or pointers.
+
+```cpp
+void swap(int &a, int &b){
+    int c = a;
+    a = b;
+    b = c;
+}
+```
+
+This is a great example of how we can use references to return multiple values in a single function.
 
 ---
 
@@ -175,3 +203,25 @@ int main(){
 ```
 
 20. Implement a function that returns the larger of two floating-point numbers using a return statement.
+
+```cpp
+float getLargerFloat(float a, float b){
+    if (a > b){
+        cout << "Number a is bigger than number b ";
+        return a;
+    } else if (a <  b){
+        cout << "Number b is bigger than number a ";
+        return b;
+    } else {
+        return a = b;;
+    }
+}
+
+int main(){
+    float a = 98.0;
+    float b = 32.0;
+
+    float result = getLargerFloat(a, b);
+    cout << result << endl;
+}
+```

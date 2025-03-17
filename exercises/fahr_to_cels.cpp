@@ -11,7 +11,7 @@ float getLargerFloat(float a, float b){
         cout << "Number b is bigger than number a ";
         return b;
     } else {
-        cout << "Number a and b are equal." << endl;
+        return a = b;;
     }
 }
 
@@ -20,5 +20,5 @@ int main(){
     float b = 32.0;
 
     float result = getLargerFloat(a, b);
-    cout << result;
+    cout << result << endl;
 }
