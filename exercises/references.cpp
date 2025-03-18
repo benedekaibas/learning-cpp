@@ -17,4 +17,7 @@ int main(){
 
     cout << result;
 
+    int sum = 20;
+    int &ref = sum;
+    cout << ref;
 }
