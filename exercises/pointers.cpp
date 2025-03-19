@@ -1,10 +1,23 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    string name = "Benedek";
-    string *ptr = &name;
+void swap_ptr(int *a, int  *b){
+    int *c = a;
 
-    cout << name << endl;
-    cout << ptr << endl;
+    a = b;
+    b = c;
+}
+
+int main(){
+    int num = 6;
+    int num_two = 9;
+
+    int *num_ptr = &num;
+    int *num_two_ptr = &num_two;
+
+
+    swap_ptr(num_ptr, num_two_ptr);
+
+    cout << *num_ptr << endl;
+    cout << *num_two_ptr << endl;
 }
