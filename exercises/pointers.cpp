@@ -1,23 +1,24 @@
 #include<iostream>
 using namespace std;
 
-void swap_ptr(int *a, int  *b){
-    int c = *a;
+void swap_ptr(int *a, int *b){
+    int *c = a;
 
     *a = *b;
-    *b = c;
+    *b = *c;
 }
 
 int main(){
-    int num = 6;
-    int num_two = 9;
+    int first_num = 10;
+    int second_num = 20;
 
-    int *num_ptr = &num;
-    int *num_two_ptr = &num_two;
+    int *first_ptr = &first_num;
+    int *second_ptr = &second_num;
 
+    swap_ptr(first_ptr, second_ptr);
+    cout << first_num << endl;
+    cout << second_num << endl;
 
-    swap_ptr(num_ptr, num_two_ptr);
-
-    cout << *num_ptr << endl;
-    cout << *num_two_ptr << endl;
 }
+
+
