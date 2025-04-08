@@ -2,10 +2,10 @@
 using namespace std;
 
 void swap_ptr(int *a, int *b){
-    int *c = a;
+    int c = *a;
 
     *a = *b;
-    *b = *c;
+    *b = c;
 }
 
 int main(){
