@@ -2,22 +2,14 @@
 #include <vector>
 using namespace std;
 
-/*
-Write a program that asks the user to enter integers as inputs to be stored in the variables 'a' and 'b' respectively. 
-There are also two integer pointers named ptrA and ptrB. Assign the values of 'a' and 'b' to ptrA and ptrB respectively,
-and display them.
-*/
 
-int user_input(int usr_ip_one, int usr_ip_two){
-    cout << "Enter an integer: " << endl;
-    cin >> usr_ip_one;
-
-    cout << "Enter another integer: " << endl;
-    cin >> usr_ip_two;
-
-    return usr_ip_one, usr_ip_two;
+int create_vector(array<int> new_array){
+  //new_array = {1,2,3,4,5,6,7,8,9};
+  return new_array;
 }
 
-int input_ptr(int *ptrA, int *ptrB){
-    
+int main(){
+  int this_arr = {1,2,3,4,5,6,7,8,9};
+  arr = create_vector(this_arr);
+  cout << arr;
 }
