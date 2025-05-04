@@ -14,7 +14,10 @@ int main(){
   int* result = arr_alloc(ptr);
 
   for (int *i = 0; i < result; i++){
-    cout << i;
+    while (*i < 5){
+      cout << i;
+    }
+
   }
 }
 
