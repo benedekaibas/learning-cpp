@@ -9,17 +9,15 @@ int* arr_alloc(int *arr_ptr){
 }
 
 void fill_array(int *arr){
-  for (int i = 0; i < sizeof(arr); i++){
+  for (int i = 0; i < 10; i++){
     arr[i] = i * 2;
   }
   cout << arr;
 }
 
 int main(){
-  int this_arr[5] = {1,2,3,4,5};
-  int *ptr = &this_arr[5];
-  int counter = 0;
-  int *i = &counter;
+  int this_arr[10] = {};
+  int *ptr = &this_arr[10];
   fill_array(ptr);
 
 }
