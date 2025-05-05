@@ -17,7 +17,8 @@ int main(){
   vector<int> *arr = &simple_arr;
   int counter = 0;
   int *i = &counter;
-  fill_array(vector<int> arr, *i);
+  fill_array(arr, *i);
+
 }
 
 /*
