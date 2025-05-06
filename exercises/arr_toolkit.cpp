@@ -9,12 +9,12 @@ int* arr_alloc(int *arr_ptr){
 }
 
 void fill_array(vector<int> *arr){
-  for (int i = 0; i < 10; i++){
-    for(int i : *arr){
-      cout << i * 2;
+  for(int i = 0; i < 10; i++){
+    vector<int> new_arr = arr[i];
+    for (int i : new_arr){
+      cout << i; //this results in memory allocation issue
     }
   }
-  cout << arr;
 }
 
 int main(){
