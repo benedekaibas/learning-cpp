@@ -8,16 +8,18 @@ int* arr_alloc(int *arr_ptr){
   return arr_ptr;
 }
 
-void fill_array(int *arr){
+void fill_array(vector<int> *arr){
   for (int i = 0; i < 10; i++){
-    arr[i] = i * 2;
+    for(int i : *arr){
+      cout << i * 2;
+    }
   }
   cout << arr;
 }
 
 int main(){
-  int this_arr[10] = {};
-  int *ptr = &this_arr[10];
+  vector<int> this_arr[10] = {};
+  vector<int> *ptr = &this_arr[10];
   fill_array(ptr);
 
 }
