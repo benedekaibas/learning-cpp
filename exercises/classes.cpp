@@ -15,6 +15,8 @@ public:
 
 
 int main(){
-  MyClass();
+  MyClass result;
+
+  result.show();
 
 }
