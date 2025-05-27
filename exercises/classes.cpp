@@ -16,8 +16,8 @@ public:
 class ForConstructor{
 public:
   ForConstructor(){
-    int val_destructor = 5;
-    cout << "Destructor method's result: " << val_destructor << endl;
+    int val_constructor = 5;
+    cout << "Destructor method's result: " << val_constructor << endl;
   }
 };
 
