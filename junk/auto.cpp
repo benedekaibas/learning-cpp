@@ -1,26 +1,37 @@
 #include <iostream>
-#include <array>
-#include <span>
-#include <string>
-using namespace std;
+#include <ostream>
 
-array <int, 5> MyArray(){
-  return {1,2,3,4,5};
+
+class MyClass {
+private:
+    int x;
+public:
+    MyClass(int val) : x(val) {
+      std::cout << val << std::endl;
+    };
+};
+
+class YourClass{
+private:
+  int x = 20;
+public:
+  YourClass(){
+    std::cout << x << std::endl;
+  };
+};
+
+class PtrUse{
+private:
+  int* ptr;
+public:
+  PtrUse(){
+    *ptr = 10;
+    std::cout << ptr << std::endl;
+  };
 };
 
 int main(){
-
-  array<int, 5> new_array = MyArray();
-
-  //cout << (arr[0]) << endl;
-
-  // cout << new_array.back() << endl;
-
-   for (int i : new_array){
-    cout << new_array.back() << endl;
-  } 
-  // */
-
-  return 0;
+  MyClass(10);
+  YourClass obj;
+  PtrUse obj1;
 }
-

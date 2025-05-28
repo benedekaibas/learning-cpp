@@ -14,5 +14,5 @@ public:
 
 int main(){
   ModifyVaribale output(10);
-  std::cout <<  output.x;
+  std::cout <<  output.x << std::endl;
 }
