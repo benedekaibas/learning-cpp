@@ -22,11 +22,12 @@ public:
 
 class PtrUse{
 private:
-  int* ptr;
+  int val = 30;
 public:
   PtrUse(){
-    *ptr = 10;
+    int* ptr = &val;
     std::cout << ptr << std::endl;
+    std::cout << *ptr << std::endl;
   };
 };
 
