@@ -1,60 +1,37 @@
-/*
-Write a simple calculator in c++
-*/
-
 #include <iostream>
-#include <string>
-using namespace std;
+#include <vector>
 
-int add(int number_one, int number_two);
-int substract(int number_one, int number_two);
-int multiply(int number_one, int number_two);
-int divide(int number_one, int number_two);
+std::vector<int> FillArray(){
+  std::vector<int> arr;
+  arr.push_back(1);
 
-int add(int number_one, int number_two){
-    return number_one + number_two;
-};
+  return arr;
+}
 
-int substract(int number_one, int number_two){
-    return number_one - number_two;
-};
+void PrintResult(std::vector<int>& display){
+  for(int i : display){
+    std::cout << i << std::endl;
+  }
+}
 
-int multiply(int number_one, int number_two){
-    return number_one * number_two;
-};
+void WhileArray(){
+  int i = 0;
+  int N = 15;
 
-int divide(int number_one, int number_two){
+  while(i < N){
+    std::cout << i++ << std::endl;
+  }
+}
 
-    if (number_two == 0){
-        throw invalid_argument("Can't divide with zero.");
-    }
-    return number_one / number_two;
-};
-
+void GetChar(){
+  char c = 0x34;
+  char* ptr = &c;
+  std::cout << *ptr << std::endl;
+}
 int main(){
-    int number_one, number_two;
-    string operand;
+  std::vector<int> result =  FillArray();
 
-    cout << "Enter the first number: ";
-    cin >> number_one;
-
-    cout << "Enter the second number: ";
-    cin >> number_two;
-
-    cout << "Enter an operand (+, -, *, /): ";
-    cin >> operand;
-
-    try{
-        if (operand == "+"){
-            cout << "Result: " << add(number_one, number_two);
-        } else if (operand == "-"){
-            cout << "Result: " << substract(number_one, number_two);
-        } else if (operand == "*"){
-            cout << "Result: " << multiply(number_one, number_two);
-        } else if (operand == "/"){
-            cout << "Result: " << divide(number_one, number_two);
-        }
-    } catch (const invalid_argument &e){
-        cout << e.what() << endl;    
-        }
-    }
+  PrintResult(result);
+  WhileArray();
+  GetChar();
+}

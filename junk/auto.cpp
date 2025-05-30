@@ -31,8 +31,19 @@ public:
   };
 };
 
+class Vector{
+public:
+  Vector(int s):elem{new double[s]}, sz{s}{};
+  double& operator[](int i){return elem[i];}
+  int size(){return sz;}
+private:
+  double* elem;
+  int sz;
+  };
+
 int main(){
   MyClass(10);
   YourClass obj;
   PtrUse obj1;
+  Vector v(6);
 }
