@@ -41,9 +41,20 @@ private:
   int sz;
   };
 
+
+enum ClassYears{
+  freshman = 1,
+  sophomore = 2,
+  junior = 3,
+  senior = 4,
+};
+
 int main(){
   MyClass(10);
   YourClass obj;
   PtrUse obj1;
   Vector v(6);
+  enum ClassYears classes;
+  classes = freshman;
+  std::cout << classes << std::endl;
 }
