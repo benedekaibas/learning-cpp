@@ -7,8 +7,8 @@
 - Pointers and references ✅
 
 ### Object-Oriented Programming (OOP):
-- Classes and objects
-- Constructors and destructors
+- Classes and objects ✅
+- Constructors and destructors ✅
 - Inheritance (basic understanding)
 - Polymorphism (virtual functions)
 - Encapsulation and abstraction
@@ -30,7 +30,7 @@
 ## Problem-Solving Skills
 
 ### Data Structures:
-- Arrays and strings
+- Arrays and strings ✅
 - Linked lists
 - Stacks and queues
 - Basic understanding of trees and graphs
@@ -46,21 +46,21 @@
 ## Practical Skills
 
 ### Coding Practice:
-- Solve problems on platforms like LeetCode, HackerRank, Codeforces, etc.
-- Practice writing clean and efficient code
+- Solve problems on platforms like LeetCode, HackerRank, Codeforces, etc. ✅
+- Practice writing clean and efficient code ✅
 
 ### Debugging and Testing:
-- Basic debugging techniques
-- Writing simple test cases
+- Basic debugging techniques ✅
+- Writing simple test cases ✅
 
 ## Soft Skills
 
 ### Communication:
-- Explain your thought process clearly
-- Ask clarifying questions
-- Discuss trade-offs and alternative solutions
+- Explain your thought process clearly ✅
+- Ask clarifying questions ✅
+- Discuss trade-offs and alternative solutions ✅
 
 ### Problem-Solving Approach:
-- Break down the problem into smaller parts
-- Write pseudocode before actual implementation
-- Optimize the solution iteratively
+- Break down the problem into smaller parts ✅
+- Write pseudocode before actual implementation ✅
+- Optimize the solution iteratively ✅
