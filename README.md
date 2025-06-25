@@ -9,7 +9,7 @@
 ### Object-Oriented Programming (OOP):
 - Classes and objects ✅
 - Constructors and destructors ✅
-- Inheritance (basic understanding)
+- Inheritance (basic understanding) ✅
 - Polymorphism (virtual functions)
 - Encapsulation and abstraction
 
