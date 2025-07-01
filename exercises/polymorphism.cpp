@@ -22,12 +22,11 @@ class CarTypes{
 public:
   std::vector<std::string> cars;
 
-  std::vector<std::string> SwedishCars(){
+  SwedishCars(){
     cars.push_back("Volvo");
     cars.push_back("Saab");
 
     return cars;
-  }
 };
 
 class ReturnCar : public CarTypes{
@@ -35,6 +34,7 @@ public:
   std::vector<std::string> SwedishCars(){
     return cars;
   };
+
 };
 
 int main(){
@@ -43,12 +43,7 @@ int main(){
   mercedes.GermanCars();
   bmw.GermanCars();
 
-  CarTypes car;
+  ReturnCar car;
   car.SwedishCars();
 
-  std::vector<std::string> store = car.SwedishCars();
-  for(std::string i : store){
-    std::cout << i << std::endl;
-  }
-
-}
+};
