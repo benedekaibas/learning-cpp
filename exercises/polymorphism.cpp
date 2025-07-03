@@ -20,14 +20,14 @@ public:
 
 class CarTypes{
 public:
-  std::vector<std::string> cars;
+  static std::vector<std::string> cars;
 
-  SwedishCars(){
+  std::vector<std::string> SwedishCars(){
     cars.push_back("Volvo");
     cars.push_back("Saab");
 
     return cars;
-};
+}};
 
 class ReturnCar : public CarTypes{
 public:
