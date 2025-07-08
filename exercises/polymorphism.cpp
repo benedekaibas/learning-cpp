@@ -20,18 +20,19 @@ public:
 
 class CarTypes{
 public:
-  static std::vector<std::string> cars;
+  std::vector<std::string> cars;
 
   std::vector<std::string> SwedishCars(){
     cars.push_back("Volvo");
     cars.push_back("Saab");
-
+    std::cout << "Function from base class" << std::endl;
     return cars;
 }};
 
 class ReturnCar : public CarTypes{
 public:
   std::vector<std::string> SwedishCars(){
+    cars.push_back("Scania");
     return cars;
   };
 
@@ -45,5 +46,9 @@ int main(){
 
   ReturnCar car;
   car.SwedishCars();
+
+  for(auto i: car.SwedishCars()){
+    std::cout << i << std::endl;
+  }
 
 };
