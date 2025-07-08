@@ -10,7 +10,7 @@
 - Classes and objects ✅
 - Constructors and destructors ✅
 - Inheritance (basic understanding) ✅
-- Polymorphism (virtual functions)
+- Polymorphism (virtual functions) ✅
 - Encapsulation and abstraction
 
 ### Memory Management:
