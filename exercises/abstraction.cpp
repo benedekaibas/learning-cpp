@@ -10,15 +10,28 @@ private:
 
 public:
   void SumOutput(int x, int y){
-    x = a;
-    y = b;
-    c = x + y;
+    a = x;
+    b = y;
+    c = a + b;
 
     std::cout << "Output for abstraction: " << c << std::endl;
+  }
+};
+
+class AddNumbers {
+
+private:
+  int x;
+
+public:
+  AddNumbers(int x){
+    std::cout << x * x << std::endl;
   }
 };
 
 int main(){
   SumNumbers obj;
   obj.SumOutput(9,10);
+
+  AddNumbers(10);
 }
