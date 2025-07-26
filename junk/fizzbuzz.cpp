@@ -1,31 +1,29 @@
+#include <filesystem>
 #include <iostream>
-using namespace std;
+#include <vector>
 
+int addition(){
+    int a = 5, b = 10;
+    return a + b;
+}
 
-void fizzbuzz(){
-    int start = 1;
-    int end = 100;
+int addition_param(int& a, int& b) {
+    return a + b;
+}
 
-    for(int i = start; i < end; i++){
-        cout << i;
+int subsitution(int a, int b) {
+    int addition = addition_param(5, 7);
+    return a + b - (addition);
+}
 
-        if(i % 3 == 0){
-            cout << ":fizz";
-        } else if(i % 5 == 0){
-            cout << ":buzz";
-        } else if(i % 5 == 0 && i % 3 == 0){
-            cout << ": fizz-buzz";
-        } else {
-            cout << i;
-        };
-    };
-};
+int main() {
+  int addition_default = addition();
+  int addition = addition_param(10, 20);
 
+  std::cout << addition_default << std::endl;
+  std::cout << addition << std::endl;
 
+  int sub = subsitution(8, 5);
 
-
-int main(){
-    fizzbuzz();
-    system("pause");
-    return 0;
+  std::cout << sub << std::endl;
 }
