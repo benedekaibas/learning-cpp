@@ -1,29 +1,16 @@
-#include <filesystem>
 #include <iostream>
 #include <vector>
 
-int addition(){
-    int a = 5, b = 10;
-    return a + b;
-}
-
-int addition_param(int& a, int& b) {
-    return a + b;
-}
-
-int subsitution(int a, int b) {
-    int addition = addition_param(5, 7);
-    return a + b - (addition);
-}
-
 int main() {
-  int addition_default = addition();
-  int addition = addition_param(10, 20);
+    std::vector<int> array;
+    int i = 0;
 
-  std::cout << addition_default << std::endl;
-  std::cout << addition << std::endl;
+    while(i <= 10) {
+        //++i;
+        array.push_back(i++);
+    }
 
-  int sub = subsitution(8, 5);
-
-  std::cout << sub << std::endl;
+    for(int y : array){
+        std::cout << y << std::endl;
+    }
 }
