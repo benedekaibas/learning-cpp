@@ -12,6 +12,7 @@
 - Inheritance (basic understanding) ✅
 - Polymorphism (virtual functions) ✅
 - Encapsulation and abstraction
+- Exception handling
 
 ### Memory Management:
 - Dynamic memory allocation (new, delete)
