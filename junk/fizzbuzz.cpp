@@ -2,15 +2,11 @@
 #include <vector>
 
 int main() {
-    std::vector<int> array;
-    int i = 0;
+    int n;
+    std::cout << "enter a integer: " << std::endl;
+    std::cin >> n;
 
-    while(i <= 10) {
-        //++i;
-        array.push_back(i++);
-    }
-
-    for(int y : array){
-        std::cout << y << std::endl;
+    if(n.eof()) {
+        std::cout << "Not an integer number";
     }
 }
