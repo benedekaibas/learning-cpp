@@ -18,11 +18,12 @@ int input(int x, int y) {
       return x / y;
     }
     else {
-      throw(y);
+      throw(std::runtime_error("Division by zero"));
     }
   }
   catch(int division_by_zero) {
-    std::cout << "Division by zero happened" << "" << division_by_zero << '\n';
+    std::cout << "Division by zero happened";
+    return division_by_zero;
   }
 }
 
