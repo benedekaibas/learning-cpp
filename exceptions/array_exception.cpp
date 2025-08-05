@@ -8,4 +8,18 @@
   Catch the exception and print an error message.
 */
 
+int arr() {
+  int t[] = {10, 20, 30, 40, 50};
+  int* ptr;
 
+  for(ptr = t; ptr < t + sizeof(t) / sizeof(t[0]); ptr++) {
+    return *ptr;
+  }
+
+  return 0;
+}
+
+
+int main() {
+  std::cout << arr() << '\n';
+}
