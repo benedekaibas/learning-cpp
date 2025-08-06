@@ -10,15 +10,19 @@
 
 int arr() {
   int t[] = {10, 20, 30, 40, 50};
-  int* ptr;
+  int idx;
 
-  for(ptr = t; ptr < t + sizeof(t) / sizeof(t[0]); ptr++) {
-    return *ptr;
+  try {
+    std::cout << "Enter an index: ";
+    std::cin >> idx;
+
+    }
+
+  } catch (declaration) {
+
   }
 
-  return 0;
 }
-
 
 int main() {
   std::cout << arr() << '\n';
