@@ -12,17 +12,12 @@ int arr() {
   int t[] = {10, 20, 30, 40, 50};
   int idx;
 
+  std::cout << "Enter an index: ";
+  std::cin >> idx;
+
   try {
-    std::cout << "Enter an index: ";
-    std::cin >> idx;
-
-    }
-
-  } catch (declaration) {
-
-  }
-
-}
+    
+  } catch () {}
 
 int main() {
   std::cout << arr() << '\n';
