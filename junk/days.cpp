@@ -1,21 +1,16 @@
 #include <iostream>
-#include <string>  // Include the <string> header for using the string type
-using namespace std;
+#include <vector>
 
-int main(){
-    string userDay;
-    string guessDay;
-    guessDay = "Friday";
-    cout << "enter a day: ";
-    cin >> userDay;
+void userInput(int& n) {
+  std::cout << "Enter a number: ";
+  std::cin >> n;
+}
 
-    cout << "the user entered the following: " << userDay << endl;
+void searchNumber() {
+  std::vector<int> numbers = {1,2,3,4,5,6,7,8,9,10};
 
-    if(guessDay == userDay){
-        cout << "Your guess is good since " << guessDay << " = " << userDay; 
-    } else {
-        cout << "Your guess is not good since " << guessDay << " != " << userDay; 
+}
 
-    };
-    cin.get();
-};
+int main() {
+  // function call comes here
+}
