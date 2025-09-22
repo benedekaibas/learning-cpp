@@ -8,7 +8,7 @@ private:
 public:
   Person(std::string n, int id) : name(n), socialID(id) {};
 
-  const std::string getName() {
+  std::string getName() const {
     return name;
   }
 
@@ -21,7 +21,7 @@ public:
     if(socialID < 0 || socialID > 1001) {
       return "Invalid ID!";
     } else {
-      std::cout << "Valid ID!";
+      std::cout << "Valid ID!" << "\n";
       return socialID;
     }
   }
@@ -30,6 +30,7 @@ public:
 int main() {
   Person personObj("Benedek", 15);
   personObj.validateID();
+  personObj.getName();
   personObj.setName("Adam");
 
 } 
