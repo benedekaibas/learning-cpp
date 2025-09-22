@@ -24,9 +24,9 @@
 - Basic algorithms (sort, find)
 
 ### Basic C++11/14 Features:
-- auto keyword
-- Range-based for loops
-- nullptr
+- auto keyword ✅
+- Range-based for loops ✅
+- nullptr ✅
 
 ## Problem-Solving Skills
 
