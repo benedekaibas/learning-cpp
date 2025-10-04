@@ -1,37 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
-std::vector<int> FillArray(){
-  std::vector<int> arr;
-  arr.push_back(1);
+#include "llvm/ADT/ArrayRef.h"
 
-  return arr;
-}
+#include "clang/Tooling/Tooling.h"
+#include "clang/Tooling/CommonOptionsParser.h"
+#include "clang/Frontend/FrontendActions.h"
 
-void PrintResult(std::vector<int>& display){
-  for(int i : display){
-    std::cout << i << std::endl;
-  }
-}
-
-void WhileArray(){
-  int i = 0;
-  int N = 15;
-
-  while(i < N){
-    std::cout << i++ << std::endl;
-  }
-}
-
-void GetChar(){
-  char c = 0x34;
-  char* ptr = &c;
-  std::cout << *ptr << std::endl;
-}
-int main(){
-  std::vector<int> result =  FillArray();
-
-  PrintResult(result);
-  WhileArray();
-  GetChar();
-}
+using namespace clang;
+using namespace clang::tooling;

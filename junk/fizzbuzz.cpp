@@ -1,12 +1,14 @@
 #include <iostream>
-#include <vector>
+#include <string>
+
+const std::string getName(){
+    std::string name = "Alice";
+    return name;
+}
 
 int main() {
-    int n;
-    std::cout << "enter a integer: " << std::endl;
-    std::cin >> n;
-
-    if(n.eof()) {
-        std::cout << "Not an integer number";
-    }
+    const std::string& ref = getName();
+    std::cout << "Name: " << ref << "\n";
+    return 0;
 }
+

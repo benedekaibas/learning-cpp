@@ -1,20 +1,12 @@
 #include <iostream>
-using namespace std;
 
-int main(){
-    bool decider = false;
-    
-    string question;
-
-    cout << "What's my favourite color?: ";
-    cin >> question;
-
-    if(question == "red"){
-        decider = true;
-        cout << decider;
-    } else{
-        cout << "program is not working efficiently";
-    }
-
-    
+void add(int* x) {
+  *x += 5;
+  std::cout << *x;
 }
+int main() {
+  int num = 3;
+  int* y = &num;
+  add(y);
+}
+
