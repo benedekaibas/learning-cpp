@@ -1,18 +1,18 @@
 #include <iostream>
-
+#include <vector>
+#include <string>
 /*
-8. Nem konstans char* literálra
+Reads N integers from the user.
 
-Feladat:
-Próbálj ki egy ilyet: char* s = "Hello";
+Stores them in a std::vector<int>.
 
-Miért kapsz fordítási hibát?
+Finds the maximum and minimum numbers.
 
-Javítsd úgy, hogy helyes legyen (const char*).
+Computes the average of the numbers.
+
+Prints the results to the console.
 */
 
-int main() {
-  char s = 'c';
-  char* s_ptr = &s;
-}
 
+int main() {
+}
