@@ -30,7 +30,8 @@ int foo() {
 }
 
 int foo_ptr(int* a, int* b) {
-  return *a * *b;
+  return *a * *b; // here we are working with the acutal numbers that are on the memory address the pointer points to. We do not work with the pointers in this case, but wit the value
+                  // we can just return the two pointers, but we can not multiply them since that would lead to a random memory address that is not on the stack.      
 }
 
 int main() {
