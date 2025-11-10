@@ -32,4 +32,8 @@ void b(){
 
 // Which of these can change the value being pointed to, and which can change where it points?
 
-
+/*
+   If we have a pointer that points to a const integer then we can change the pointer where it points, but not the value since it is a const
+   value. In the other case, where the pointer is a const integer we cannot change the pointer where it points, but we can change the value 
+   in that memory address since that is not a const int. If we declare the value as well as const then we cannot change the value either.
+*/
