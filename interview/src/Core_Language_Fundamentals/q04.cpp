@@ -26,3 +26,9 @@ void ReturnOutput() {
 int main() {
   HelloWorld::output();
 }
+
+/*
+   Namespaces are useful to wrap related classes, functions, structs into a name and later on call that specific namespace.
+   It helps to prevent name conflicts and also good for logically organizing our code. By organizing functions that have
+   the same logic behind them into a namespace we can avoid name conflicts and logically our code is better presented.
+*/
