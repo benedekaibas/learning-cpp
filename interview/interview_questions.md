@@ -1,6 +1,6 @@
 # 🧠 C++ Junior Interview Questions
 
-A curated list of **C++ interview questions** commonly asked for **junior software engineering roles**.  
+A curated list of **C++ interview questions** commonly asked for **junior software engineering roles**.
 This collection covers everything from **core syntax and OOP** to **modern C++ features, STL, and debugging**.
 
 ---

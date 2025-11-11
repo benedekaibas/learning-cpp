@@ -1,14 +1,19 @@
 #include <iostream>
-#include <string>
+#include <thread>
 
-const std::string getName(){
-    std::string name = "Alice";
-    return name;
+void addition(int input) {
+  while(true){};
+}
+
+int substraction() {
+  std::cout << "Second thread.";
+  return 5 - 3;
 }
 
 int main() {
-    const std::string& ref = getName();
-    std::cout << "Name: " << ref << "\n";
-    return 0;
-}
+  std::thread first(addition, 5);
+  std::thread second(substraction);
 
+  first.join();
+  second.join();
+}
