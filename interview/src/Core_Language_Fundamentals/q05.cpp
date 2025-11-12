@@ -3,8 +3,8 @@
 // What happens if you don’t initialize a local variable?
 
 int main() {
-  int addition;
-  return addition;
+  int addition; // addition does not have a value
+  return addition; // because addition does not have a value the return statement will return garbage data.
 }
 
 /*
